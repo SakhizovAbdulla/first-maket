@@ -9,7 +9,6 @@ body{
     margin: 0 auto;
 }
 .glav1{
-    width: 1440px;
     height: 789px;
     background: url("../img/1.PNG") center no-repeat;
     background-size: cover;
@@ -52,8 +51,7 @@ body{
     font-size: 14px;
     line-height: 17px;
     color: #fff;
-   
-    
+    text-decoration: none;
 }
 /*btn*/
 .btn{
@@ -130,15 +128,13 @@ body{
 /*blok2*/
 .blok2{
     display: flex;
-    justify-content: space-between;
-    width: 1440px;
+    justify-content: space-around;
     height: 500px;
 }
 .left{
     margin-top: 132px;
     width: 445px;
     height: 115px;
-    margin-left: 168px;
 }
 .easy{
     font-weight: 600;
@@ -160,22 +156,119 @@ body{
 }
 .right{
     margin-top: 86px;
-    margin-right: 240px;
 }
 /*features*/
 .blok3{
     background: #FAFAFA;
-}
-.container1{
-    width: 100%;
-    max-width: 1440px;
 }
 h2{
     font-weight: 600;
     font-size: 36px;
     line-height: 43px;
     text-align: center;
-    margin-top: 63px;
+    padding-top: 40px;
+}
+.features__img{
+    display: flex;
+    justify-content: space-around;
+}
+.features__img123{
+    position: relative;
+    width: 350px;
+    height: 355px;
+    text-align: center;
+
+}
+.features__vor{
+    position: relative;
+    width: 293px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-left: 28px;
+    transform: translateY(-124px);
+    z-index: 1;
+}
+.features__title{
+    width: 220px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 35px;
+    margin: 0 auto;
+}
+.features__text{
+    width: 229px;
+    font-size: 12px;
+    line-height: 150%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+}
+.features__vor a{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 150%;
+    text-decoration: none;
+    padding-bottom: 25px;
+    color: #ED4C5C;
+    padding-top: 10px;
+}
+/*technology*/
+.technology__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 49.47px;
+}
+.technology__item{
+    width: 255px;
+    text-align: center;
+}
+.number{
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 120px;
+    text-align: center;
+
+    color: rgba(16, 16, 16, 0.08);
+}
+.technology__blok{
+    position: relative;
+    z-index: 1;
+    transform: translateY(-65px);
+}
+.technology__blok4{
+    position: relative;
+    z-index: 1;
+    transform: translateY(-65px);
+    transform: translateY(-49px);
+}
+.technology__img{
+    height: 70px;
+}
+.technology__title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+.technology__text{
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    padding-top: 9.62px;
+}
+.technology__btn{
+    display: flex;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-transform: uppercase;
+    color: #fff;
+    background: #ED4C5C;
+    border-radius: 6px;
+    padding: 15px 33px 16px 32px;
+    margin: 0 auto;
+    margin-bottom: 28.89px;
 }
 /*stay*/
 .stay{
@@ -247,20 +340,19 @@ h2{
 /*contact*/
 .contact{
     display: flex;
+    justify-content: space-around;
     width: 100%;
-    max-width: 1440px;
+    margin-top: 100px;
 }
 .contact__title{
     font-weight: 600;
     font-size: 36px;
-    margin-top: 117px;
-    margin-left: 176px;
 }
 .contact__text{
     width: 404px;
     line-height: 140%;
     font-size: 14px;
-    margin-left: 176px;
+    
     margin-top: 54px;
 }
 .contact__item{
@@ -268,8 +360,8 @@ h2{
 }
 
 .contact__input{
-    padding-top: 117px;
-    margin-left: 271px;
+  
+   
     
 }
 .contact__name input{
