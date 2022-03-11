@@ -70,6 +70,7 @@ body{
 }
 /*burger*/
 .burger{
+    display: none;
     width: 30px;
     height: 30px;
     position: relative;
@@ -81,6 +82,7 @@ body{
     position: absolute;
     top: 50%;
     transition: all ease 0.5s;
+    right: 50%;
 }
 .burger span:nth-of-type(2){
     top: calc(50% - 17px);
@@ -103,6 +105,7 @@ body{
     color: #fff;
 }
 .cloudbudget__suptitle{
+    color: #fff;
     font-weight: 600;
     font-size: 24px;
     line-height: 150%;
@@ -377,7 +380,7 @@ h2{
     border-radius: 6px;
 }
 select{
-    width: 85%;
+    width: 86%;
     height: 40px;
     padding-left: 20px;
     margin-bottom: 24px;
@@ -417,7 +420,14 @@ select{
     margin-top: 33px;
 }
 .footer__text2{
-    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+
+}
+.footer__text2 a{
+    text-decoration: none;
+    color: black;
 }
 .footer__number{
     margin-top: 11px;
@@ -468,6 +478,9 @@ select{
 }
 
 @media (max-width: 768px){
+    .burger{
+        display: block;
+    }
     .navbar{
         display: none;
     }
@@ -513,12 +526,81 @@ select{
     .container{
         max-width: 400px;
     }
+    .cloudbudget__title{
+        font-size: 30px;
+    }
+    .technology__inner{
+        justify-content: center;
+    }
+    .stay__text{
+        width: 405px;
+    }
+    .contact{
+        text-align: center;
+    }
+    .contact__title{
+        display: flex;
+        justify-content: center;
+    }
+    .contact__text{
+        width: 400px;
+    }
+    .contact__name{
+        text-align: center;
+        display: inline-block;
+        
+    }
+    .contact__name input{
+        width: 80%;
+        margin-right: 0;
+    
+    }
+    .contact__input{
+        text-align: center;
+    }
+    .contact__last{
+        
+        margin-top: 23px;
+    }
+    .contact__number{
+        display: flex;
+       justify-content: center;
+    }
+    .footer__text4 img{
+        width: 150px;
+        height: auto;
+    }
+    .easy__text{
+        text-align: center;
+    }
+    .right img{
+        width: 90%;
+        margin-top: 70px;
+    }
+
+    
     
 }
 
 @media (max-width: 375px){
     .container{
         max-width: 350px;
+    }
+    .stay__title{
+        font-size: 30px;
+    }
+    .stay__text{
+        width: 360px;
+    }
+    .contact__text{
+        width: 350px;
+    }
+    .easy{
+        font-size: 30px;
+    }
+    .right img{
+        width: 90%;
+        margin-top: 15%;
     }
 
 
@@ -528,6 +610,29 @@ select{
     .container{
         max-width: 300px;
     }
-
-   
+    .easy{
+        font-size: 25px;
+    }
+    .right img{
+        width: 90%;
+        margin-top: 15%;
+    }
+    .features__img123{
+        width: 300px;
+    }
+   .features__img123 img{
+       width: 280px;
+   }
+   .features__vor{
+       width: 240px;
+   }
+   .stay__title{
+    font-size: 25px;
+}
+    .stay__text{
+    width: 300px;
+}
+    .contact__text{
+    width: 300px;
+}
 }
